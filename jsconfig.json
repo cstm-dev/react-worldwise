@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "app/*": ["./src/App/app/*"],
+      "pricing/*": ["./src/App/pricing/*"],
+      "product/*": ["./src/App/product/*"],
+      "login/*": ["./src/App/login/*"],
+      "root/*": ["./src/App/root/*"],
+      "utilities/*": ["./src/Utilities/*"],
+      "hooks/*": ["./src/Hooks/*"]
+    }
+  }
+}
