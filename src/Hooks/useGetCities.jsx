@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const BASE_URL = "http://localhost:8000";
 
 function useGetCities() {
-  const [cities, setCities] = useState([{}]);
+  const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -17,6 +17,7 @@ function useGetCities() {
         setCities(data);
       } catch (err) {
         console.error(err.message);
+        throw new Error("Couldn't fetch the data");
       } finally {
         setIsLoading(false);
       }

@@ -3,5 +3,6 @@ import PageNav from "./PageNav.jsx";
 import Logo from "./Logo.jsx";
 import Spinner from "./Spinner.jsx";
 import Message from "./Message.jsx";
+import Button from "./Button.jsx";
 
-export { PageNotFound, PageNav, Logo, Spinner, Message };
+export { PageNotFound, PageNav, Logo, Spinner, Message, Button };
