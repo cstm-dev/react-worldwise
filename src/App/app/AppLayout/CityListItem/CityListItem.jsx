@@ -2,17 +2,11 @@ import PropTypes from "prop-types";
 import styles from "./CityListItem.module.css";
 import { Link } from "react-router-dom";
 import { useCities } from "hooks/_components.jsx";
+import { createFlagEmoji, formatDate } from "helpers/_functions.js";
 
 CityListItem.propTypes = {
   city: PropTypes.object,
 };
-
-const formatDate = (date) =>
-  new Intl.DateTimeFormat("en", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  }).format(new Date(date));
 
 function CityListItem({ city }) {
   const { currentCity } = useCities();
@@ -26,7 +20,7 @@ function CityListItem({ city }) {
         }`}
         to={`${id}?lat=${position.lat}&lng=${position.lng}`}
       >
-        <span className={styles.emoji}>{emoji}</span>
+        <span className={styles.emoji}>{createFlagEmoji(emoji)}</span>
         <h3 className={styles.name}>{cityName}</h3>
         <time className={styles.date}>({formatDate(date)})</time>
         <button className={styles.deleteBtn}>&times;</button>

@@ -1,3 +1,4 @@
+import { createFlagEmoji } from "helpers/_functions.js";
 import styles from "./CountryListItem.module.css";
 import PropTypes from "prop-types";
 
@@ -10,7 +11,7 @@ function CountryListItem({ city }) {
 
   return (
     <li className={styles.countryListItem}>
-      <span>{emoji}</span>
+      <span>{createFlagEmoji(emoji)}</span>
       <span>{country}</span>
     </li>
   );

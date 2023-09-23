@@ -3,14 +3,7 @@ import { useEffect } from "react";
 import styles from "./City.module.css";
 import { useCities } from "hooks/_components.jsx";
 import { Button, Spinner } from "utilities/_components.jsx";
-
-const formatDate = (date) =>
-  new Intl.DateTimeFormat("en", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-    weekday: "long",
-  }).format(new Date(date));
+import { createFlagEmoji, formatDate } from "helpers/_functions.js";
 
 function City() {
   const navigate = useNavigate();
@@ -18,6 +11,7 @@ function City() {
   const { currentCity, getCityById, isLoading } = useCities();
   const { cityName, emoji, date, notes } = currentCity;
 
+  // FIXME: func in dependency array
   useEffect(() => {
     getCityById(id);
   }, [id]);
@@ -29,7 +23,7 @@ function City() {
       <div className={styles.row}>
         <h6>City name</h6>
         <h3>
-          <span>{emoji}</span> {cityName}
+          <span>{createFlagEmoji(emoji)}</span> {cityName}
         </h3>
       </div>
 

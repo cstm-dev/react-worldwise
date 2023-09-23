@@ -9,7 +9,8 @@
       "root/*": ["./src/App/root/*"],
       "utilities/*": ["./src/Utilities/*"],
       "hooks/*": ["./src/Hooks/*"],
-      "contexts/*": ["./src/Contexts/*"]
+      "contexts/*": ["./src/Contexts/*"],
+      "helpers/*": ["./src/Helpers/*"]
     }
   }
 }
