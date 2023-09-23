@@ -13,6 +13,7 @@ export default defineConfig({
       login: "/src/App/login",
       utilities: "/src/Utilities",
       hooks: "/src/Hooks",
+      contexts: "/src/Contexts",
     },
   },
 });

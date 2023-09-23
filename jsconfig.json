@@ -8,7 +8,8 @@
       "login/*": ["./src/App/login/*"],
       "root/*": ["./src/App/root/*"],
       "utilities/*": ["./src/Utilities/*"],
-      "hooks/*": ["./src/Hooks/*"]
+      "hooks/*": ["./src/Hooks/*"],
+      "contexts/*": ["./src/Contexts/*"]
     }
   }
 }

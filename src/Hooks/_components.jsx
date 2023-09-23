@@ -1,3 +1,3 @@
-import useGetCities from "./useGetCities.jsx";
+import useCities from "./useCities.jsx";
 
-export { useGetCities };
+export { useCities };

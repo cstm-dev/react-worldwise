@@ -2,13 +2,16 @@ import styles from "./CountryList.module.css";
 import { Spinner, Message } from "utilities/_components.jsx";
 import { CountryListItem } from "app/_components.jsx";
 import PropTypes from "prop-types";
+import { useCities } from "hooks/_components.jsx";
 
 CountryList.propTypes = {
   cities: PropTypes.array,
   isLoading: PropTypes.bool,
 };
 
-function CountryList({ cities, isLoading }) {
+function CountryList() {
+  const { cities, isLoading } = useCities();
+
   if (isLoading) return <Spinner />;
 
   if (!cities.length)
