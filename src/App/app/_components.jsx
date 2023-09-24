@@ -9,6 +9,8 @@ import City from "./AppLayout/City/City.jsx";
 import CountryList from "./AppLayout/CountryList/CountryList.jsx";
 import CountryListItem from "./AppLayout/CountryListItem/CountryListItem.jsx";
 import Form from "./AppLayout/Form/Form.jsx";
+import User from "./AppLayout/User/User.jsx";
+import ProtectedRoute from "./ProtectedRoute/ProtectedRoute.jsx";
 
 export {
   AppLayout,
@@ -22,4 +24,6 @@ export {
   CountryList,
   CountryListItem,
   Form,
+  User,
+  ProtectedRoute,
 };
