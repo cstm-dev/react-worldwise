@@ -9,8 +9,13 @@ CityListItem.propTypes = {
 };
 
 function CityListItem({ city }) {
-  const { currentCity } = useCities();
+  const { currentCity, deleteCityById } = useCities();
   const { cityName, emoji, date, id, position } = city;
+
+  function handleClick(e, id) {
+    e.preventDefault();
+    deleteCityById(id);
+  }
 
   return (
     <li>
@@ -23,7 +28,12 @@ function CityListItem({ city }) {
         <span className={styles.emoji}>{createFlagEmoji(emoji)}</span>
         <h3 className={styles.name}>{cityName}</h3>
         <time className={styles.date}>({formatDate(date)})</time>
-        <button className={styles.deleteBtn}>&times;</button>
+        <button
+          className={styles.deleteBtn}
+          onClick={(e) => handleClick(e, id)}
+        >
+          &times;
+        </button>
       </Link>
     </li>
   );
