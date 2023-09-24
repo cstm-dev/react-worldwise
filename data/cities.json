@@ -49,18 +49,6 @@
       "id": 98443201
     },
     {
-      "cityName": "Arjeplog",
-      "country": "Sweden",
-      "emoji": "SE",
-      "date": "2023-09-24T09:58:38.929Z",
-      "notes": "",
-      "position": {
-        "lat": "66.40795547978848",
-        "lng": "18.193359375000004"
-      },
-      "id": 98443202
-    },
-    {
       "cityName": "Kholmogory",
       "country": "Russian Federation (the)",
       "emoji": "RU",
@@ -71,6 +59,30 @@
         "lng": "42.97851562500001"
       },
       "id": 98443204
+    },
+    {
+      "cityName": "Bosroger",
+      "country": "France",
+      "emoji": "FR",
+      "date": "2023-09-24T11:12:29.376Z",
+      "notes": "",
+      "position": {
+        "lat": "46.01222384063236",
+        "lng": "2.2412109375000004"
+      },
+      "id": 98443206
+    },
+    {
+      "cityName": "Gullspang",
+      "country": "Sweden",
+      "emoji": "SE",
+      "date": "2023-09-24T11:31:31.190Z",
+      "notes": "",
+      "position": {
+        "lat": "58.99531118795094",
+        "lng": "14.018554687500002"
+      },
+      "id": 98443207
     }
   ]
 }
