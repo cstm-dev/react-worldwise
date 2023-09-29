@@ -11,10 +11,9 @@ function City() {
   const { currentCity, getCityById, isLoading } = useCities();
   const { cityName, emoji, date, notes } = currentCity;
 
-  // FIXME: func in dependency array
   useEffect(() => {
     getCityById(id);
-  }, [id]);
+  }, [id, getCityById]);
 
   if (isLoading) return <Spinner />;
 
